@@ -15,7 +15,7 @@ namespace UnitTestStaticMember
             // Init 内で "認可された 権限コード(AuthorityCode) のリスト" を初期化する
             ServiceManager.Init();
 
-            // User(Name, AuthorityCode) のリストを初期化する
+            // User(Name, AuthorityCode) のリストを作成する(userManager に渡すため)
             var users = new List<IUser>()
             {
                 new User("foo", AuthorityCode.A), new User("bar", AuthorityCode.B)
